@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contactez-nous">
+        <h1>contactez-nous</h1>
+        <p>un problème,ne question,envie de nous envoyer un message? N'hésitez pas 
+            à utiliser ce formulaire pour prendre contact avec nous !</p>
+         <form action="#">
+            <div>
+                <label for="non">Votre nom</label>
+                <input type="text" id="nom" name="nom" placeholder="Martin" required>
+            </div>
+            <div>
+                <label for="email">Votre email</label>
+                <input type="text" id="email" name="email" placeholder="monadresse@mail.com" required>
+            </div>
+            <div>
+                <label for="sujet">Quel est le sujet de votre message?</label>
+                <select name="sujet" id="sujet" required>
+                    <option value=""disabled selected hidden>Choisissez le sujet de votre message</option>
+                    <option value="problème-compte">problème avec mon compte</option>
+                    <option value="Question-produit">Question a propos d'un produit</option>
+                    <option value="suivi-commande">Autre...</option>
+                </select>
+            </div>
+            <div>
+                <label for="message">votre message</label>
+                <textarea id="message" name="message" placeholder="Bonjour, je vous contact car.
+                ..." required></textarea>
+            </div>
+            <div>
+                <button type="submit">Envoyer mon message</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
